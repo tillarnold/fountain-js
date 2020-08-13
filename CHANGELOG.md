@@ -6,6 +6,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.3.0] - 2020-08-14
+
 ### Added
 - Add additional title page metadata outputs to output JSON object
 
@@ -63,7 +65,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Delete /app site directory
 - Delete /samples directory
 
-[Unreleased]: https://github.com/thombruce/fountain.js/compare/v1.2.0...HEAD
+[Unreleased]: https://github.com/thombruce/fountain.js/compare/v1.3.0...HEAD
+[1.3.0]: https://github.com/thombruce/fountain.js/compare/v1.2.0...v1.3.0
 [1.2.0]: https://github.com/thombruce/fountain.js/compare/v1.1.0...v1.2.0
 [1.1.0]: https://github.com/thombruce/fountain.js/compare/v1.0.2...v1.1.0
 [1.0.2]: https://github.com/thombruce/fountain.js/compare/v1.0.1...v1.0.2
