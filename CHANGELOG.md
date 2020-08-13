@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 - Refactor variable declaration and JSON output
+- Refactor title_page switch case statements
 
 ## [1.2.0] - 2020-08-13
 
