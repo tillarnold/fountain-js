@@ -1,12 +1,8 @@
-// fountain-js 0.1.10
-// http://www.opensource.org/licenses/mit-license.php
-// Copyright (c) 2012 Matt Daly
-
 ;(function() {
   'use strict';
 
   var regex = {
-    title_page: /^((?:title|credit|author[s]?|source|notes|draft date|date|contact|copyright)\:)/gim,
+    title_page: /^((?:title|credit|author[s]?|source|notes|(?:draft )?date|contact(?: info)?|copyright)\:)/gim,
 
     scene_heading: /^((?:\*{0,3}_?)?(?:(?:int|ext|est|i\/e)[. ]).+)|^(?:\.(?!\.+))(.+)/i,
     scene_number: /( *#(.+)# *)/,
@@ -224,13 +220,11 @@
       switch (token.type) {
         case 'title': title_page.push('<h1>' + token.text + '</h1>'); title = token.text.replace('<br />', ' ').replace(/<(?:.|\n)*?>/g, ''); break;
         case 'credit': title_page.push('<p class=\"credit\">' + token.text + '</p>'); break;
-        case 'author': title_page.push('<p class=\"authors\">' + token.text + '</p>'); break;
-        case 'authors': title_page.push('<p class=\"authors\">' + token.text + '</p>'); break;
+        case 'author': case 'authors': title_page.push('<p class=\"authors\">' + token.text + '</p>'); break;
         case 'source': title_page.push('<p class=\"source\">' + token.text + '</p>'); break;
         case 'notes': title_page.push('<p class=\"notes\">' + token.text + '</p>'); break;
-        case 'draft_date': title_page.push('<p class=\"draft-date\">' + token.text + '</p>'); break;
-        case 'date': title_page.push('<p class=\"date\">' + token.text + '</p>'); break;
-        case 'contact': title_page.push('<p class=\"contact\">' + token.text + '</p>'); break;
+        case 'draft_date': case 'date': title_page.push('<p class=\"draft-date\">' + token.text + '</p>'); break;
+        case 'contact': case 'contact_info': title_page.push('<p class=\"contact\">' + token.text + '</p>'); break;
         case 'copyright': title_page.push('<p class=\"copyright\">' + token.text + '</p>'); break;
 
         case 'scene_heading': html.push('<h3' + (token.scene_number ? ' id=\"' + token.scene_number + '\">' : '>') + token.text + '</h3>'); break;

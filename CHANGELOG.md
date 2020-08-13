@@ -6,6 +6,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- Add support for 'Contact info' to title_page RegEx and HTML rendering
+
+### Changed
+- Refactor title_page RegEx reducing duplication for 'Date' and 'Draft date'
+- Refactor switch statement so that author and authors return same result
+- Refactor switch statement so that draft_date and date return same result
+
 ## [1.0.2] - 2020-08-13
 
 ### Added
