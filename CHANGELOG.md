@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- Add additional title page metadata outputs to output JSON object
+
 ### Changed
 - Refactor variable declaration and JSON output
 - Refactor title_page switch case statements

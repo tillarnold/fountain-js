@@ -213,6 +213,14 @@
         i = tokens.length,
         token,
         title,
+        credit,
+        author,
+        source,
+        notes,
+        draft_date,
+        contact,
+        copyright,
+        revision,
         title_page = [],
         html = [],
         output;
@@ -228,30 +236,38 @@
           break;
         case 'credit':
           title_page.push('<p class=\"credit\">' + token.text + '</p>');
+          credit = token.text.replace('<br />', ' ').replace(/<(?:.|\n)*?>/g, '');
           break;
         case 'author':
         case 'authors':
           title_page.push('<p class=\"authors\">' + token.text + '</p>');
+          author = token.text.replace('<br />', ' ').replace(/<(?:.|\n)*?>/g, '');
           break;
         case 'source':
           title_page.push('<p class=\"source\">' + token.text + '</p>');
+          source = token.text.replace('<br />', ' ').replace(/<(?:.|\n)*?>/g, '');
           break;
         case 'notes':
           title_page.push('<p class=\"notes\">' + token.text + '</p>');
+          notes = token.text.replace('<br />', ' ').replace(/<(?:.|\n)*?>/g, '');
           break;
         case 'draft_date':
         case 'date':
           title_page.push('<p class=\"draft-date\">' + token.text + '</p>');
+          draft_date = token.text.replace('<br />', ' ').replace(/<(?:.|\n)*?>/g, '');
           break;
         case 'contact':
         case 'contact_info':
           title_page.push('<p class=\"contact\">' + token.text + '</p>');
+          contact = token.text.replace('<br />', ' ').replace(/<(?:.|\n)*?>/g, '');
           break;
         case 'copyright':
           title_page.push('<p class=\"copyright\">' + token.text + '</p>');
+          copyright = token.text.replace('<br />', ' ').replace(/<(?:.|\n)*?>/g, '');
           break;
         case 'revision':
           title_page.push('<p class=\"revision\">' + token.text + '</p>');
+          revision = token.text.replace('<br />', ' ').replace(/<(?:.|\n)*?>/g, '');
           break;
 
         case 'scene_heading': html.push('<h3' + (token.scene_number ? ' id=\"' + token.scene_number + '\">' : '>') + token.text + '</h3>'); break;
@@ -282,6 +298,17 @@
 
     output = {
       title,
+      credit,
+      author,
+      authors: author,
+      source,
+      notes,
+      draft_date,
+      date: draft_date,
+      contact,
+      contact_info: contact,
+      copyright,
+      revision,
       html: {
         title_page: title_page.join(''),
         script: html.join('')
