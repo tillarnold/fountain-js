@@ -6,6 +6,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.2] - 2020-08-13
+
 ### Added
 - Add title to package.json
 - Add language highlighting to README code snippets
@@ -36,6 +38,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Delete /app site directory
 - Delete /samples directory
 
-[Unreleased]: https://github.com/thombruce/fountain.js/compare/v1.0.1...HEAD
+[Unreleased]: https://github.com/thombruce/fountain.js/compare/v1.0.2...HEAD
+[1.0.2]: https://github.com/thombruce/fountain.js/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/thombruce/fountain.js/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/thombruce/fountain.js/releases/tag/v1.0.0
