@@ -9,6 +9,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Add 'Revision' to supported title_page metadata
 
+### Changed
+- Update LICENSE copyright date and holder
+
 ## [1.1.0] - 2020-08-13
 
 ### Added
