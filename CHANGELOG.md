@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- List Matt Daly as a contributor
+
 ### Removed
 - Delete minified file
 

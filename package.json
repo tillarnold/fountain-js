@@ -5,5 +5,6 @@
   "main": "fountain.js",
   "repository": "https://github.com/thombruce/fountain.js.git",
   "author": "Thom Bruce <thom@thombruce.com>",
+  "contributors": ["Matt Daly"],
   "license": "MIT"
 }
