@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - Add title to package.json
+- Add language highlighting to README code snippets
 
 ## [1.0.1] - 2020-08-13
 
