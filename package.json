@@ -1,0 +1,9 @@
+{
+  "name": "fountain.js",
+  "version": "1.0.0",
+  "description": "JavaScript parser for Fountain markup language.",
+  "main": "fountain.js",
+  "repository": "https://github.com/thombruce/fountain.js.git",
+  "author": "Thom Bruce <thom@thombruce.com>",
+  "license": "MIT"
+}
