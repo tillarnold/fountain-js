@@ -9,6 +9,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - List Matt Daly as a contributor
 
+### Changed
+- Rename package to @thombruce/fountain.js
+
 ### Removed
 - Delete minified file
 
