@@ -209,9 +209,13 @@
       toks = undefined;
     }
       
-    var tokens = tokenize(script)
-      , i      = tokens.length, token
-      , title, title_page = [], html = [], output;
+    var tokens = tokenize(script),
+        i = tokens.length,
+        token,
+        title,
+        title_page = [],
+        html = [],
+        output;
 
     while (i--) {
       token = tokens[i];
@@ -254,7 +258,14 @@
       }
     }
 
-    output = { title: title, html: { title_page: title_page.join(''), script: html.join('') }, tokens: toks ? tokens.reverse() : undefined };
+    output = {
+      title,
+      html: {
+        title_page: title_page.join(''),
+        script: html.join('')
+      },
+      tokens: toks ? tokens.reverse() : undefined
+    };
 
     if (typeof callback === 'function') {
       return callback(output);
