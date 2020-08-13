@@ -2,7 +2,7 @@
   'use strict';
 
   var regex = {
-    title_page: /^((?:title|credit|author[s]?|source|notes|(?:draft )?date|contact(?: info)?|copyright)\:)/gim,
+    title_page: /^((?:title|credit|author[s]?|source|notes|(?:draft )?date|contact(?: info)?|copyright|revision)\:)/gim,
 
     scene_heading: /^((?:\*{0,3}_?)?(?:(?:int|ext|est|i\/e)[. ]).+)|^(?:\.(?!\.+))(.+)/i,
     scene_number: /( *#(.+)# *)/,
@@ -226,6 +226,7 @@
         case 'draft_date': case 'date': title_page.push('<p class=\"draft-date\">' + token.text + '</p>'); break;
         case 'contact': case 'contact_info': title_page.push('<p class=\"contact\">' + token.text + '</p>'); break;
         case 'copyright': title_page.push('<p class=\"copyright\">' + token.text + '</p>'); break;
+        case 'revision': title_page.push('<p class=\"revision\">' + token.text + '</p>'); break;
 
         case 'scene_heading': html.push('<h3' + (token.scene_number ? ' id=\"' + token.scene_number + '\">' : '>') + token.text + '</h3>'); break;
         case 'transition': html.push('<h2>' + token.text + '</h2>'); break;
