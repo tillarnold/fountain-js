@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 - Adopt the fancy README title format from thombruce/repo
+- Add forked from attribution to README
 
 ## [1.3.0] - 2020-08-14
 
