@@ -1,7 +1,15 @@
-fountain-js
-===========
+<h1 id="fountain-js" align="center">Fountain.js</h1>
 
-fountain-js is a JavaScript based parser for the screenplay format [Fountain](http://fountain.io/).
+<p align="center"><a href="https://www.patreon.com/thombruce"><img src="https://c5.patreon.com/external/logo/become_a_patron_button.png" alt="Become a Patron"></a></p>
+
+<p align="center"><a href="https://github.com/thombruce/fountain.js/releases"><img alt="Version" src="https://img.shields.io/github/v/tag/thombruce/fountain.js?label=version"></a>
+<a href="https://github.com/thombruce/fountain.js/issues"><img src="https://img.shields.io/github/issues-raw/thombruce/fountain.js?logo=github" alt="GitHub issues"></a></p>
+
+<p align="center"><a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-green.svg" alt="License"></a></p>
+
+<p align="center"><a href="CHANGELOG.md"><img src="https://img.shields.io/badge/Keep%20a%20Changelog-v1.1.0%20adopted-red.svg" alt="Changelog"></a></p>
+
+<p align="center">A JavaScript based parser for the screenplay format [Fountain](http://fountain.io/).</p>
 
 You can [try fountain-js out](http://mattdaly.github.com/Fountain.js/). The file system currently uses the HTML 5 File API, which means not all browsers support it, you'll be told if yours doesn't - I'm working on compatiblity. CSS styling isn't complete, so some elements aren't placed correctly and the text spacing might not be quite right, and, as you'll see, individual pages aren't currently supported either.
 
