@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- Add support for 'Series' metadata key (unofficial)
+
 ### Changed
 - Adopt the fancy README title format from thombruce/repo
 - Add forked from attribution to README
