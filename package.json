@@ -3,7 +3,7 @@
   "version": "1.4.0",
   "title": "Fountain.js",
   "description": "JavaScript parser for Fountain markup language.",
-  "main": "fountain.js",
+  "main": "src/fountain.js",
   "repository": "https://github.com/thombruce/fountain.js.git",
   "author": "Thom Bruce <thom@thombruce.com>",
   "contributors": ["Matt Daly"],

@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+- Move fountain.js to src/fountain.js
+
 ### Removed
 - Revert "Remove support for 'Series' metadata key (unofficial)"
 
