@@ -2,7 +2,7 @@
   'use strict';
 
   var regex = {
-    title_page: /^((?:title|credit|author[s]?|series|source|notes|(?:draft )?date|contact(?: info)?|copyright|revision)\:)/gim,
+    title_page: /^((?:title|credit|author[s]?|source|notes|(?:draft )?date|contact(?: info)?|copyright|revision)\:)/gim,
 
     scene_heading: /^((?:\*{0,3}_?)?(?:(?:int|ext|est|i\/e)[. ]).+)|^(?:\.(?!\.+))(.+)/i,
     scene_number: /( *#(.+)# *)/,
@@ -215,7 +215,6 @@
         title,
         credit,
         author,
-        series,
         source,
         notes,
         draft_date,
@@ -243,9 +242,6 @@
         case 'authors':
           title_page.push('<p class=\"authors\">' + token.text + '</p>');
           author = token.text.replace('<br />', ' ').replace(/<(?:.|\n)*?>/g, '');
-          break;
-        case 'series':
-          series = token.text.replace('<br />', ' ').replace(/<(?:.|\n)*?>/g, '');
           break;
         case 'source':
           title_page.push('<p class=\"source\">' + token.text + '</p>');
@@ -305,7 +301,6 @@
       credit,
       author,
       authors: author,
-      series,
       source,
       notes,
       draft_date,
