@@ -2,14 +2,14 @@
 
 <p align="center"><a href="https://www.patreon.com/thombruce"><img src="https://c5.patreon.com/external/logo/become_a_patron_button.png" alt="Become a Patron"></a></p>
 
-<p align="center"><a href="https://github.com/thombruce/fountain.js/releases"><img alt="Version" src="https://img.shields.io/github/v/tag/thombruce/fountain.js?label=version"></a>
-<a href="https://github.com/thombruce/fountain.js/issues"><img src="https://img.shields.io/github/issues-raw/thombruce/fountain.js?logo=github" alt="GitHub issues"></a></p>
+<p align="center"><a href="https://github.com/thombruce/fountain-js/releases"><img alt="Version" src="https://img.shields.io/github/v/tag/thombruce/fountain-js?label=version"></a>
+<a href="https://github.com/thombruce/fountain-js/issues"><img src="https://img.shields.io/github/issues-raw/thombruce/fountain-js?logo=github" alt="GitHub issues"></a></p>
 
 <p align="center"><a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-green.svg" alt="License"></a></p>
 
 <p align="center"><a href="CHANGELOG.md"><img src="https://img.shields.io/badge/Keep%20a%20Changelog-v1.1.0%20adopted-red.svg" alt="Changelog"></a></p>
 
-<p align="center">A JavaScript based parser for the screenplay format [Fountain](http://fountain.io/).</p>
+<p align="center">A JavaScript based parser for the screenplay format <a href="https://fountain.io/">Fountain</a>.</p>
 
 Forked from [mattdaly/Fountain.js](https://github.com/mattdaly/Fountain.js).
 
