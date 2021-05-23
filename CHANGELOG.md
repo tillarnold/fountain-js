@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.5.2] - 2021-05-23
+
+### Changed
+- Update README
+
 ## [1.5.1] - 2021-05-22
 
 ### Changed
@@ -87,7 +92,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Delete /app site directory
 - Delete /samples directory
 
-[Unreleased]: https://github.com/thombruce/fountain.js/compare/v1.5.1...HEAD
+[Unreleased]: https://github.com/thombruce/fountain.js/compare/v1.5.2...HEAD
+[1.5.2]: https://github.com/thombruce/fountain.js/compare/v1.5.0...v1.5.2
 [1.5.1]: https://github.com/thombruce/fountain.js/compare/v1.5.0...v1.5.1
 [1.5.0]: https://github.com/thombruce/fountain.js/compare/v1.4.0...v1.5.0
 [1.4.0]: https://github.com/thombruce/fountain.js/compare/v1.3.0...v1.4.0
