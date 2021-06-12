@@ -9,7 +9,7 @@
 
     transition: /^((?:FADE (?:TO BLACK|OUT)|CUT TO BLACK)\.|.+ TO\:)|^(?:> *)(.+)/,
     
-    dialogue: /^([A-Z*_]+[0-9A-Z (._\-')]*)(\^?)?(?:\n(?!\n+))([\s\S]+)/,
+    dialogue: /^([\p{Lu}\p{Lt}*_]+[0-9\p{Lu}\p{Lt} (._\-')]*)(\^?)?(?:\n(?!\n+))([\s\S]+)/u,
     parenthetical: /^(\(.+\))$/,
 
     action: /^(.+)/g,
